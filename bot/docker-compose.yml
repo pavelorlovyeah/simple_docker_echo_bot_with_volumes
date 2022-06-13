@@ -14,7 +14,7 @@ services:
       # syntax: -/localmachine/path/to/folder:/dockercontainer/path:ro 
 
       # where 'ro' - means 'read only'
-      #       'rw' - means 'read and write' accses
+      #       'rw' - means 'read and write' accsess
       
 
 networks:
