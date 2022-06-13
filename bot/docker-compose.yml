@@ -8,9 +8,14 @@ services:
       bot:
         ipv4_address: 172.19.0.44
     volumes:  # change ~/path/to/this/repo/clone to your own path
-      - ~/path/to/this/repo/clone/volumes/config_folder:/config:ro  # read only
-      - ~/path/to/this/repo/clone/volumes/data_folder:/data:rw  # read and write
+      - ~/path/to/this/repo/clone/volumes/config_folder:/config:ro 
+      - ~/path/to/this/repo/clone/volumes/data_folder:/data:rw
+  
+      # syntax: -/localmachine/path/to/folder:/dockercontainer/path:ro 
 
+      # where 'ro' - means 'read only'
+      #       'rw' - means 'read and write' accses
+      
 
 networks:
   bot:
