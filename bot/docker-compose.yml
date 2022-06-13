@@ -1,0 +1,26 @@
+version: "3"
+services:
+  bot: 
+    build: .
+    ports: 
+      - 8000:8000
+    networks:
+      bot:
+        ipv4_address: 172.19.0.44
+    volumes:  # change ~/path/to/this/repo/clone to your own path
+      - ~/path/to/this/repo/clone/volumes/config_folder:/config:ro  # read only
+      - ~/path/to/this/repo/clone/volumes/data_folder:/data:rw  # read and write
+
+
+networks:
+  bot:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.19.0.0/24
+
+volumes:
+  config:
+  data:
+    
