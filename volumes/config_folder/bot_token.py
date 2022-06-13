@@ -1,4 +1,4 @@
-# здесь токен бота
+# telegram token 
  
 TOKEN = 'NeverGonnaGiveYouUp'
 
