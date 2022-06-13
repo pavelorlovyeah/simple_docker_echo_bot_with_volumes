@@ -5,5 +5,4 @@ How to run:
 - clone this repo
 - change path in `docker-compose.yml`
 - add TOKEN from @BotFather to `volumes/config_folder/bot_token.py`
-- `cd bot`
-- `sudo docker-compose up --build`
+- `sudo docker-compose up --build` from `bot` folder
