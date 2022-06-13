@@ -1,5 +1,6 @@
 # docker aiogram bot 
 
 How to run:
-`cd bot`
-`sudo docker-compose up --build`
+- install docker somehow
+- `cd bot`
+- `sudo docker-compose up --build`
